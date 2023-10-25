@@ -1,8 +1,61 @@
-# React + Vite
+# custom-datepicker-react
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Custom Datepicker for React using Material-UI components.
 
-Currently, two official plugins are available:
+## Description
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+`custom-datepicker-react` is a customizable date and time picker component for React applications. It is built using Material-UI components and is designed to be easily integrated into your React projects. This component allows users to select both date and time, and it provides various customization options to meet your specific requirements.
+
+## Installation
+
+You can install `custom-datepicker-react` via npm:
+
+```bash
+npm install custom-datepicker-react
+```
+
+## Usage
+
+Here's an example of how to use custom-datepicker-react in your React application:
+
+```jsx
+import React, { useState } from "react";
+import { Datepicker } from "custom-datepicker-react";
+
+function MyComponent() {
+  const [selectedDate, setSelectedDate] = useState(null);
+
+  const handleDateChange = (date) => {
+    setSelectedDate(date);
+  };
+
+  return (
+    <div>
+      <h1>Datepicker Example</h1>
+      <Datepicker label="Select Date and Time" onChange={handleDateChange} />
+      {selectedDate && <p>You selected: {selectedDate.toString()}</p>}
+    </div>
+  );
+}
+
+export default MyComponent;
+
+```
+
+## Props
+- label (string): The label to display above the Datepicker component.
+- onChange (function): A callback function that receives the selected date and time as a parameter.
+
+## License
+This package is licensed under the MIT License. See the LICENSE file for details.
+
+## Contributing
+We welcome contributions! If you'd like to contribute to this project, please open an issue or create a pull request.
+
+## Contact
+If you have any questions or need assistance, you can contact us at [julien.lxpro@gmail.com].
+
+Acknowledgments
+Material-UI: https://mui.com/
+Dayjs: https://day.js.org/
+Thank you for using custom-datepicker-react!
