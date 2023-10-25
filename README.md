@@ -53,7 +53,7 @@ This package is licensed under the MIT License. See the LICENSE file for details
 We welcome contributions! If you'd like to contribute to this project, please open an issue or create a pull request.
 
 ## Contact
-If you have any questions or need assistance, you can contact us at [julien.lxpro@gmail.com].
+If you have any questions or need assistance, you can contact us at [your-email@example.com].
 
 Acknowledgments
 Material-UI: https://mui.com/
