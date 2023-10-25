@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Datepicker from "./component/DatePicker";
+import DatePicker from "./component/DatePicker";
 import { Stack, TextField } from "@mui/material";
 
 function App() {

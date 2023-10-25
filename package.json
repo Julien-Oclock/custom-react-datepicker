@@ -1,8 +1,39 @@
 {
   "name": "custom-datepicker-react",
-  "private": true,
   "version": "0.0.0",
   "type": "module",
+  "description": "A custom datepicker component for React",
+  "author": {
+    "name": "Julien Oclock",
+    "email": "julien.lxpro@gmail.com"
+  },
+  "keywords": [
+    "datepicker",
+    "react",
+    "custom",
+    "mui",
+    "material-ui"
+  ],
+  "main": "./dist/index.umd.js",
+  "module": "./dist/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.umd.js"
+    }
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -19,13 +50,33 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@testing-library/dom": "^9.3.3",
+    "@testing-library/react": "^14.0.0",
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
     "@vitejs/plugin-react": "^4.0.3",
-    "eslint": "^8.45.0",
-    "eslint-plugin-react": "^7.32.2",
+    "c8": "^8.0.1",
+    "eslint": "^8.52.0",
+    "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
-    "vite": "^4.4.5"
+    "jsdom": "^22.1.0",
+    "react-test-renderer": "^18.2.0",
+    "vite": "^4.4.5",
+    "vitest": "^0.34.6"
+  },
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "node": true,
+      "es2020": true
+    },
+    "extends": [
+      "eslint:recommended",
+      "plugin:react/recommended"
+    ],
+    "parserOptions": {
+      "sourceType": "module"
+    }
   }
 }
